@@ -35,7 +35,7 @@ trap "rm -f .tmp* data/.tmp*" EXIT INT TERM
 
 # For Travis CI to work on Windows/Mac OS X
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-  PYTHON="python"
+  PYTHON="python3"
   CMD="$PYTHON -m sacrebleu"
 elif [[ "$OSTYPE" == "msys" ]]; then
   PYTHON="python"
